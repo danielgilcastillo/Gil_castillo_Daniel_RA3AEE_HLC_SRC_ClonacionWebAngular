@@ -1,0 +1,55 @@
+<div class="container fondoblanco" >
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="container my-5">
+                <!--Usamos bootstrap para hacer un formulario-->
+                <h2 class="text-center mb-4">Contacto</h2>
+                <form action="">
+                    <!-- Campo de Nombre -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" 
+                            name="nombre" required>
+                    </div>
+                    <!-- Campo de Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email"  name="email"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control" id="telefono" 
+                            name="telefono" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <input type="text" class="form-control" id="email" 
+                            name="mensaje" required>
+                    </div>
+
+                    <!-- Botón de Enviar -->
+                    <button type="submit" class="fondoazul">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-6" *ngIf="mostrarMapa" >
+            <div class="container mt-5">
+                <div class="row">
+                    <!--Imagen de mapa adjuntado con bootstrap-->
+                    <div class="col-sm-6 mx-auto" style="width: 100%; height: 80%">
+                        <img src="../../assets/images/mapa.png" class="img-rounded center mx-auto"
+                            style="width: 100%; height: 80%">
+                            <br>
+                        Localízanos
+                      
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>  
+        <button class="container mt-5 fondoazul" style="  width :100%" (click)="ocultarMostrar()">Ocultar/mostrar mapa</button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+    "areas": [
+        {
+            "imagen": "../../assets/images/iconocabeza.png",
+            "cabecera": "Elemento 1",
+            "texto": "Evaluación psicológica"
+        },
+        {
+            "imagen": "../../assets/images/iconocabeza.png",
+            "cabecera": "Elemento 2",
+            "texto": "Ponemos a "        },
+        {
+            "imagen": "../../assets/images/iconocabeza.png",
+            "cabecera": "Elemento 3",
+            "texto": "Convenios de atención clínica en empres"
+        },
+        {
+            "imagen": "../../assets/images/iconocabeza.png",
+            "cabecera": "Elemento 4",
+            "texto": "La cual contribuye "
+        }
+    ]
+}

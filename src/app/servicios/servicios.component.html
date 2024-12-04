@@ -1,0 +1,51 @@
+<!--Usamos bootstrap para crear dos imágenes con texto-->
+<div class="container  fondoazul" style="  width :100%">
+
+
+
+    <div class="row">
+
+        <div class="col-sm-4" *ngFor="let unarea of primerGrupo()">
+            <div class="container mt-4">
+                <div class="card img-fluid">
+
+                    <img class="card-img-top mx-auto" src='{{unarea.imagen}}' alt="Card image" style="width:20% ">
+
+                    <h4 class="card-title mx-auto">{{ unarea.cabecera }}</h4>
+                    <div class="card-text mx-auto w-60 p-30" style="width:100% ;padding: 40px">
+
+                        <p class="card-text mx-auto text-center">{{ unarea.texto}}</p>
+                    </div>
+                    <a routerLink='{{ unarea.destino }}' class="card-title mx-auto">VER MAS</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-sm-4" *ngFor="let unarea of segundoGrupo()">
+            <div class="container mt-4">
+                <div class="card img-fluid">
+
+                    <img class="card-img-top mx-auto" src='{{unarea.imagen}}' alt="Card image" style="width:20% ">
+
+                    <h4 class="card-title mx-auto">{{ unarea.cabecera }}</h4>
+                    <div class="card-text mx-auto w-60 p-30" style="width:100% ;padding: 40px">
+
+                        <p class="card-text mx-auto text-center">{{ unarea.texto}}</p>
+                    </div>
+                    <a href="#" class="card-title mx-auto">VER MAS</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
